@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Lingua",
+    "slug": "lingua",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.blakesmithllc.lingua"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F05F44",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.blakesmithllc.lingua"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Lingua listens to your spoken answers during lessons.",
+          "speechRecognitionPermission": "Lingua turns your spoken answers into text to check them."
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Lingua listens to your spoken answers during lessons.",
+          "enableBackgroundPlayback": true,
+          "enableBackgroundRecording": true
+        }
+      ]
+    ]
+  }
+}
